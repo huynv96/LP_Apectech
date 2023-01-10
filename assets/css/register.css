@@ -1,0 +1,139 @@
+#register_buynow {
+  /* Modal Content */
+  /* Add Animation */
+  /* The Close Button */
+}
+#register_buynow .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+#register_buynow .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border: none;
+}
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+#register_buynow .closeformRegister {
+  color: white;
+  float: right;
+  font-size: 28px;
+}
+#register_buynow .closeformRegister:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#register_buynow .modal-body {
+  padding: 5rem 5rem;
+  background: #F6F6F7;
+  border-radius: 1.6rem;
+  border: none;
+  box-shadow: 0px 80px 45px rgba(249, 171, 70, 0.01), 0px 20px 38px rgba(249, 171, 70, 0.05), 0px 15px 28px rgba(249, 171, 70, 0.09), 0px 5px 16px rgba(249, 171, 70, 0.1), 0px 0px 0px rgba(249, 171, 70, 0.1);
+}
+#register_buynow .modal-body h4 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: var(--text-color);
+}
+#register_buynow .modal-body p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: var(--second-text-color);
+  margin: 0;
+}
+#register_buynow .modal-body svg {
+  margin-right: 1.8rem;
+}
+#register_buynow .modal-body .line {
+  width: 100px;
+  height: 6px;
+  background: var(--main-color);
+  margin: 2rem 0;
+}
+#register_buynow .modal-body .register-info {
+  background: var(--white);
+  padding: 1rem 1.6rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+#register_buynow .modal-body .form-control {
+  border-radius: 8px;
+}
+#register_buynow .modal-body .form-control:focus {
+  border-color: var(--main-color);
+  box-shadow: 0px 80px 45px rgba(249, 171, 70, 0.01), 0px 20px 38px rgba(249, 171, 70, 0.05), 0px 15px 28px rgba(249, 171, 70, 0.09), 0px 5px 16px rgba(249, 171, 70, 0.1), 0px 0px 0px rgba(249, 171, 70, 0.1);
+}
+#register_buynow .modal-body .form-group label {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  line-height: 2 rem;
+  font-weight: 700;
+}
+#register_buynow .modal-body .form-group input, #register_buynow .modal-body .form-group textarea {
+  padding: 1.6rem 1.6rem;
+  color: var(--text-color);
+}
+#register_buynow .modal-body .form-group.required .control-label:after {
+  content: " *";
+  color: red;
+}
+#register_buynow .modal-body form {
+  padding: 32px;
+  background: #FDFDFD;
+  border-radius: 8px;
+}
+#register_buynow .modal-body form button {
+  width: 100%;
+}
+#register_buynow .modal-footer {
+  background-color: transparent;
+  border: none;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* The Modal (background) *//*# sourceMappingURL=register.css.map */

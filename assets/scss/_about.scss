@@ -1,0 +1,26 @@
+#about{
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        max-width: 100%;
+    } 
+    .col-right{
+        li{
+            list-style-type: circle;
+            margin: 1.2rem 0;
+        }
+        .desc{
+            margin: 1.6rem 0;
+            font-size: 1.6rem;
+        }
+    }
+    h3{
+        text-align: left;
+    }
+    p{
+        text-align: left;
+    }
+}

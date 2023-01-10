@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="7haKf27Zg3zCZ7m0UpfSE3qCzfltMhA7GKqDpZ3448E" />
+    <meta name="facebook-domain-verification" content="hm3u67y7btftx4k4kl1d8gzn74gq8b" />
+    <meta name="og:type" content="article">
+    <title>APECTech - Sứ mệnh mang dịch vụ IT Việt Nam ra Thế giới</title>
+
+    <link rel="shortcut icon" type="image/png" href="./assets/images/header-logo.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header" class="">
+            <div id="header_menu" class="row mar0">
+                <div class="container menu__wrapper">
+                    <div class="logo-page">
+                        <a href="/">
+                            <img src="./assets/images/logo-pc.png" class="img-fluid" alt="ApecTech" title="ApecTech">
+                        </a>
+                    </div>
+                    <div class="navbar">
+                        <div id="menu" class="top-level-menu">
+                            <li>
+                                <a href="#home" class="lang" key="HEADER-LINK01">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="lang" key="HEADER-LINK02">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="#product" class="lang" key="HEADER-LINK03">Sản phẩm</a>
+                            </li>
+                            <li>
+                                <a href="#service" class="lang" key="HEADER-LINK04">Dịch vụ</a>
+                            </li>
+                            <li>
+                                <a href="#process" class="lang" key="HEADER-LINK05">Quy trình</a>
+                            </li>
+                            <li>
+                                <a href="#footer" class="lang" key="HEADER-LINK06">Liên hệ</a>
+                            </li>
+                            <p id="btnRegBuyNow-mb" class="main-button lang" key ="HEADER-BUY">
+                                Nhận báo giá
+                            </p>
+
+                        </div>
+                    </div>                   
+
+                    <div class="contact">
+                        <div class="switch-language">
+                            <button class="translate active" id="vi">VI</button>
+                            <button class="translate" id="en">EN</button>
+                        </div>
+                        <p id="btnRegBuyNow" class="main-button lang" key ="HEADER-BUY">
+                            Nhận báo giá
+                        </p>
+                        <!-- The Modal -->
+                        <div id="register_buynow" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-6 reg-info">
+                                                <h4 class="lang" key="FORM-CONTACT-TITLE">Liên hệ với chúng tôi</h4>
+                                                <p class="lang" key="FORM-CONTACT-DESC">Đăng ký với chúng tôi để được tư vấn và báo giá dịch vụ Apec tech</p>
+                                                <div class="line"></div>
+                                                <div class="register-address register-info"><svg width="20" height="20"
+                                                        viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M7.13478 18.7733V15.7156C7.13478 14.9351 7.77217 14.3023 8.55844 14.3023H11.4326C11.8102 14.3023 12.1723 14.4512 12.4393 14.7163C12.7063 14.9813 12.8563 15.3408 12.8563 15.7156V18.7733C12.8539 19.0978 12.9821 19.4099 13.2124 19.6402C13.4427 19.8705 13.7561 20 14.0829 20H16.0438C16.9596 20.0023 17.8388 19.6428 18.4872 19.0008C19.1356 18.3588 19.5 17.487 19.5 16.5778V7.86686C19.5 7.13246 19.1721 6.43584 18.6046 5.96467L11.934 0.675869C10.7737 -0.251438 9.11111 -0.221498 7.98539 0.746979L1.46701 5.96467C0.872741 6.42195 0.517552 7.12064 0.5 7.86686V16.5689C0.5 18.4639 2.04738 20 3.95617 20H5.87229C6.55123 20 7.103 19.4562 7.10792 18.7822L7.13478 18.7733Z"
+                                                            fill="#262424" />
+                                                    </svg> <span>117 Trần Duy Hưng, Cầu Giấy, Hà Nội</span> </div>
+                                                <div class="register-mobile register-info"><svg width="20" height="20"
+                                                        viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M9.53174 10.4724C13.5208 14.4604 14.4258 9.84672 16.9656 12.3848C19.4143 14.8328 20.8216 15.3232 17.7192 18.4247C17.3306 18.737 14.8616 22.4943 6.1846 13.8197C-2.49348 5.144 1.26158 2.67244 1.57397 2.28395C4.68387 -0.826154 5.16586 0.589383 7.61449 3.03733C10.1544 5.5765 5.54266 6.48441 9.53174 10.4724Z"
+                                                            fill="#262424" />
+                                                    </svg> <span>0915-251-505</span></div>
+                                                <div class="register-email register-info"><svg width="20" height="18"
+                                                        viewBox="0 0 20 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M14.9394 0C16.2804 0 17.5704 0.53 18.5194 1.481C19.4694 2.43 20.0004 3.71 20.0004 5.05V12.95C20.0004 15.74 17.7304 18 14.9394 18H5.06037C2.26937 18 0.000366211 15.74 0.000366211 12.95V5.05C0.000366211 2.26 2.25937 0 5.06037 0H14.9394ZM16.5304 6.54L16.6104 6.46C16.8494 6.17 16.8494 5.75 16.5994 5.46C16.4604 5.311 16.2694 5.22 16.0704 5.2C15.8604 5.189 15.6604 5.26 15.5094 5.4L11.0004 9C10.4204 9.481 9.58937 9.481 9.00037 9L4.50037 5.4C4.18937 5.17 3.75937 5.2 3.50037 5.47C3.23037 5.74 3.20037 6.17 3.42937 6.47L3.56037 6.6L8.11037 10.15C8.67037 10.59 9.34937 10.83 10.0604 10.83C10.7694 10.83 11.4604 10.59 12.0194 10.15L16.5304 6.54Z"
+                                                            fill="#262424" />
+                                                    </svg> <span>infotech@apecgroup.net</span></div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-6 form-register" >
+                                                <form>
+                                                    <div class="form-group required">
+                                                        <label class="control-label lang" for="registerInputEmail" key="FORM-CONTACT-NAME">Họ và tên
+                                                        </label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Trần Văn A">
+                                                    </div>
+                                                    <div class="form-group required">
+                                                        <label for="registerInputEmail"
+                                                            class="control-label">Email</label>
+                                                        <input type="email" class="form-control" id="registerInputEmail"
+                                                            aria-describedby="emailHelp" placeholder="abc@gmail.com">
+                                                    </div>
+                                                    <div class="form-group required">
+                                                        <label for="registerInputEmail" class="control-label lang" key="FORM-CONTACT-PHONE" >Số điện
+                                                            thoại</label>
+                                                        <input type="tel" class="form-control" id="registerInputEmail"
+                                                            placeholder="(+84) 123 456 789">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="registerFormControlTextarea"
+                                                            class="control-label lang" key="FORM-CONTACT-CONTENT">Nội dung</label>
+                                                        <textarea class="form-control" id="registerFormControlTextarea"
+                                                            rows="3" placeholder="Tôi cần tư vấn về ..."></textarea>
+                                                    </div>
+                                                    <button type="submit" class="main-button btn btn-primary lang" key="FOOTER-CONSULTANT">Tư
+                                                        vấn</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <span class="closeformRegister">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="40" height="40" rx="20" fill="black" fill-opacity="0.5" />
+                                            <path d="M24 16L16 24M16 16L24 24" stroke="#FDFDFD" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
+                    <div id="menu-btn" class="fas fa-bars"></div>
+                </div>
+            </div>
+        </header>
+        <section id="home">
+            <div class="testimonials-container">
+                <div class="testimonials-carousel owl-carousel owl-centered">
+                    <div class="item v1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="col-left">
+                                        <h1 class="head">
+                                            <span class="text d-block lang" key ="HOME-BANNER1-TITLE" >
+                                                Dịch vụ chuyên nghiệp</span>
+                                        </h1>
+                                        <div class="line"></div>
+                                        <div class="desc lang" key ="HOME-BANNER1-DESC">
+                                            Chúng tôi chuyên cung cấp các dịch vụ phát triển hệ thống phần mềm, ứng dụng
+                                            mobile,
+                                            thiết kế website và giải pháp trực tuyến giúp Doanh nghiệp khẳng định thương
+                                            hiệu của
+                                            mình.
+                                        </div>
+                                        <p class="more main-button">
+                                            <a href="#" class="lang" key ="HOME-BUTTON">Khám phá giải pháp</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="col-right">
+                                        <img src="/assets/images/IIlus_1.svg" alt="Ứng Dụng Di Động ">                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item v2">
+                        3rem; <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="col-left">
+                                        <h1 class="head">
+                                            <span class="text d-block lang" key ="HOME-BANNER2-TITLE">
+                                                Giải pháp tổng thể</span>
+                                            <span class="text d-block"></span>
+                                        </h1>
+                                        <div class="line"></div>
+                                        <div class="desc lang" key="HOME-BANNER2-DESC">
+                                            Giải pháp Công nghệ tối ưu cho doanh nghiệp. Chúng tôi luôn biết phát huy
+                                            thế mạnh
+                                            và khai thác triệt để các thành tựu công nghệ, đem đến thành công cho nhiều
+                                            đối tác.
+                                        </div>
+                                        <p class="more main-button">
+                                            <a href="#" class="lang" key="HOME-BUTTON">Khám phá giải pháp</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="col-right"> 
+                                        <img src="/assets/images/Illus_2.svg" alt="Ứng Dụng Di Động ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item v3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="col-left">
+                                        <h1 class="head">
+                                            <span class="text d-block lang" key ="HOME-BANNER3-TITLE">
+                                                Sản phẩm đa dạng</span>
+                                            <span class="text d-block"></span>
+                                        </h1>
+                                        <div class="line"></div>
+                                        <div class="desc lang" key="HOME-BANNER3-DESC">
+                                            Chúng tôi tập trung phát triển các sản phẩm, hệ sinh thái đa lĩnh vực.
+                                            Đem tới cho khách hàng những sản phẩm tốt nhất với quy trình đầy đủ,
+                                            kiểm duyệt chất lượng sản phẩm rõ ràng.
+                                        </div>
+                                        <p class="more main-button">
+                                            <a href="#" class="lang" key="HOME-BUTTON">Khám phá giải pháp</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="col-right">
+                                        <img src="/assets/images/Illus_3.svg" alt="Ứng Dụng Di Động ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">            
+            <div class="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6" data-animate-in="left" data-animate-in-delay="50" >
+                            <img src="./assets/images/about-img.png" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6" data-animate-in="right" data-animate-in-delay="50" >
+                            <div class="col-right">
+                                <div class="section_title">
+                                    <h3 class="lang" key="ABOUT-TITLE"></h3>
+                                    <p class="desc lang" key="ABOUT-DESC">ApecTech _ Sứ mệnh mang dịch vụ IT Việt Nam ra Thế giới</p>
+                                    <div class="line"></div>
+                                </div>
+                                <li class="lang" key="ABOUT-DESC-L1">Công nghệ vượt trội</li>
+                                <li class="lang" key="ABOUT-DESC-L2">Chuyên nghiệp trong công việc</li>
+                                <li class="lang" key="ABOUT-DESC-L3">Đa dạng lĩnh vực</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="partner">
+                        <h3 class="partner-title lang" key="PARTNER-TITLE">Khách hàng của chúng tôi</h3>
+                        <div class="container" style="padding:0">
+                            <div id="partner_slide" data-animate-in="right" data-animate-in-delay="50">
+                                <div class="item">
+                                    <img class="img-fluid" src="./assets/images/parner-mandalaholiday.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-fluid" src="./assets/images/partner-apecfinance.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-fluid" src="./assets/images/partner-apecgroup.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-fluid" src="./assets/images/partner-idj.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-fluid" src="./assets/images/partner-mandala.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-fluid" src="./assets/images/parner-mandalaholiday.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-fluid" src="./assets/images/partner-apecfinance.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-fluid" src="./assets/images/partner-apecgroup.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-fluid" src="./assets/images/partner-idj.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-fluid" src="./assets/images/partner-mandala.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="product">
+            <div class="product">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-4" data-animate-in="up" data-animate-in-delay="50">
+                            <div class="product_title">
+                                <h3 class="lang" key="PRODUCT-TITLE">Sản phẩm</h3>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-8" data-animate-in="up" data-animate-in-delay="50">
+                            <div class="section_desc">
+                                <p class="desc lang" key="PRODUCT-DESC">
+                                    Chúng tôi đã và đang trong quá trình phát triển,
+                                    cung cấp các giải pháp Công nghệ Chuyên nghiệp,
+                                    Đa dạng và Vượt trội tới các khách hàng cao cấp.
+                                </p>
+                            </div>
+                            <div class="product-line line"></div>
+                        </div>
+                        <div class="product-content col-12 col-md-12 col-lg-12" data-animate-in="up" data-animate-in-delay="100">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active lang" data-toggle="tab" href="#tabs-1" role="tab" key="PRODUCT-TAB1">Smart
+                                        Apps</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link lang" data-toggle="tab" href="#tabs-2" role="tab" key="PRODUCT-TAB2">Apec Tech AI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link lang" data-toggle="tab" href="#tabs-3" role="tab" key="PRODUCT-TAB3">Khác</a>
+                                </li>
+                            </ul><!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                    <div class="slider">
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-01.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Hotel</h5>
+                                                    <p class="card-text lang" key="PRODUCT-DESC1">Giải pháp công nghệ tổng thể quản lý Khách sạn
+                                                        5 Sao.</p>
+                                                    <a href="#">
+                                                        <p class="lang" key="PRODUCT-CONTACT">Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-02.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Company</h5>
+                                                    <p class="card-text lang" key ="PRODUCT-DESC2">Giải pháp quản lý eOffiec - Nhanh chóng, tối ưu
+                                                        nền tảng quản lý.</p>
+                                                    <a href="#">
+                                                        <p class="lang" key="PRODUCT-CONTACT">Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-03.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Building</h5>
+                                                    <p class="card-text lang" key="PRODUCT-DESC3">Giải pháp công nghệ quản lý và vận hàng tòa
+                                                        nhà.</p>
+                                                    <a href="#">
+                                                        <p class="lang" key="PRODUCT-CONTACT">Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-01.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Hotel</h5>
+                                                    <p class="card-text lang" key="PRODUCT-DESC1">Giải pháp công nghệ tổng thể quản lý Khách sạn
+                                                        5 Sao.</p>
+                                                    <a href="#">
+                                                        <p class="lang" key="PRODUCT-CONTACT">Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-02.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Company</h5>
+                                                    <p class="card-text lang" key ="PRODUCT-DESC2">Giải pháp quản lý eOffiec - Nhanh chóng, tối ưu
+                                                        nền tảng quản lý.</p>
+                                                    <a href="#">
+                                                        <p class="lang" key="PRODUCT-CONTACT">Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-03.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Building</h5>
+                                                    <p class="card-text lang" key="PRODUCT-DESC3">Giải pháp công nghệ quản lý và vận hàng tòa
+                                                        nhà.</p>
+                                                    <a href="#">
+                                                        <p class="lang" key="PRODUCT-CONTACT">Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>                                                                               
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                    <div class="slider">
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-01.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Hotel</h5>
+                                                    <p class="card-text">Giải pháp công nghệ tổng thể quản lý Khách sạn
+                                                        5 Sao.</p>
+                                                    <a href="#">
+                                                        <p>Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-02.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Company</h5>
+                                                    <p class="card-text">Giải pháp quản lý eOffiec - Nhanh chóng, tối ưu
+                                                        nền tảng quản lý.</p>
+                                                    <a href="#">
+                                                        <p>Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-03.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Building</h5>
+                                                    <p class="card-text">Giải pháp công nghệ quản lý và vận hàng tòa
+                                                        nhà.</p>
+                                                    <a href="#">
+                                                        <p>Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-01.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Hotel</h5>
+                                                    <p class="card-text">Giải pháp công nghệ tổng thể quản lý Khách sạn
+                                                        5 Sao.</p>
+                                                    <a href="#">
+                                                        <p>Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-02.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Company</h5>
+                                                    <p class="card-text">Giải pháp quản lý eOffiec - Nhanh chóng, tối ưu
+                                                        nền tảng quản lý.</p>
+                                                    <a href="#">
+                                                        <p>Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-03.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Building</h5>
+                                                    <p class="card-text">Giải pháp công nghệ quản lý và vận hàng tòa
+                                                        nhà.</p>
+                                                    <a href="#">
+                                                        <p>Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                    <div class="slider">
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-01.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Hotel</h5>
+                                                    <p class="card-text">Giải pháp công nghệ tổng thể quản lý Khách sạn
+                                                        5 Sao.</p>
+                                                    <a href="#">
+                                                        <p>Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-02.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Company</h5>
+                                                    <p class="card-text">Giải pháp quản lý eOffiec - Nhanh chóng, tối ưu
+                                                        nền tảng quản lý.</p>
+                                                    <a href="#">
+                                                        <p>Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-03.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Building</h5>
+                                                    <p class="card-text">Giải pháp công nghệ quản lý và vận hàng tòa
+                                                        nhà.</p>
+                                                    <a href="#">
+                                                        <p>Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-01.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Hotel</h5>
+                                                    <p class="card-text">Giải pháp công nghệ tổng thể quản lý Khách sạn
+                                                        5 Sao.</p>
+                                                    <a href="#">
+                                                        <p>Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-02.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Company</h5>
+                                                    <p class="card-text">Giải pháp quản lý eOffiec - Nhanh chóng, tối ưu
+                                                        nền tảng quản lý.</p>
+                                                    <a href="#">
+                                                        <p>Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slick-slideshow__slide">
+                                            <div class="card">
+                                                <div class="card-img">
+                                                    <img class="card-img-top" src="./assets/images/product-03.png"
+                                                        alt="Card image cap">
+                                                    <img class="grid grid-left"
+                                                        src="./assets/images/product-grid-left.svg" alt="grid">
+                                                    <img class="grid grid-right"
+                                                        src="./assets/images/product-grid-right.svg" alt="grid">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Smart Building</h5>
+                                                    <p class="card-text">Giải pháp công nghệ quản lý và vận hàng tòa
+                                                        nhà.</p>
+                                                    <a href="#">
+                                                        <p>Liên hệ</p>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z"
+                                                                fill="#FDB022" />
+                                                            <path
+                                                                d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z"
+                                                                fill="#FDB022" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="service">
+            <div class="service">
+                <div class="section_title" data-animate-in="up" data-animate-in-delay="50">
+                    <h3 class="lang" key="SERVICE-TITLE">Dịch vụ</h3>
+                    <p class="desc lang" key="SERVICE-DESC">Dịch vụ IT Việt Nam_Công cấp dịch vụ IT chuyên nghiệp</p>
+                    <div class="line"></div>
+                </div>
+                <div class="container" data-animate-in="left" data-animate-in-delay="50">
+                    <div class="row row-flex g-2" data-animate-in="up" data-animate-in-delay="50">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="card-wrapper">
+                                <div class="number"><span>01</span></div>
+                                <div class="service-row service-icon">
+                                    <img src="./assets/images/service-icon-01.svg" alt="">
+                                </div>
+                                <div class="service-row service-title">
+                                    <h5 class="lang" key="SERVICE-ITEM-01">
+                                        Trung tâm phát triển gia công Phần mềm
+                                    </h5>
+                                </div>
+                                <div class="desc service-row">
+                                    <p class="lang" key="SERVICE-ITEM-DESC01">Tối đa hóa năng suất và lợi nhuận của bạn với sự trợ giúp của các dịch vụ trao
+                                        thường của chúng tôi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6" data-animate-in="right" data-animate-in-delay="50">
+                            <div class="card-wrapper">
+                                <div class="number"><span>02</span></div>
+                                <div class="service-row service-icon">
+                                    <img src="./assets/images/service-icon-02.svg" alt="">
+                                </div>
+                                <div class="service-row service-title">
+                                    <h5 class="lang" key="SERVICE-ITEM-02">Tư vấn chuyển đổi kỹ thuật số</h5>
+                                </div>
+                                <div class="service-row desc">
+                                    <p class="lang" key="SERVICE-ITEM-DESC02">Chuyển đổi cách làm việc và mô hình hoạt động trong khi thúc đẩy chuyển đồi công
+                                        nghệ.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-2" data-animate-in="up" data-animate-in-delay="50">
+                        <div class="col-12 col-md-6 col-lg-6" data-animate-in="right" data-animate-in-delay="50">
+                            <div class="card-wrapper">
+                                <div class="number"><span>03</span></div>
+                                <div class="service-row service-icon">
+                                    <img src="./assets/images/service-icon-03.svg" alt="">
+                                </div>
+                                <div class="service-row service-title">
+                                    <h5 class="lang" key="SERVICE-ITEM-03">Dịch vụ cung ứng nhân lực</h5>
+                                </div>
+                                <div class="service-row desc">
+                                    <p class="lang" key="SERVICE-ITEM-DESC03">Với nhiều năm kinh nghiệm trong lĩnh vực cung ứng lao động chuyên nghiệp, APEC TECH đã và đang trở thành thương hiệu đáng tin cậy.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6" data-animate-in="left" data-animate-in-delay="50">
+                            <div class="card-wrapper">
+                                <div class="number"><span>04</span></div>
+                                <div class="service-row service-icon">
+                                    <img src="./assets/images/service-icon-04.svg" alt="">
+                                </div>
+                                <div class="service-row service-title">
+                                    <h5 class="lang" key="SERVICE-ITEM-04">Đào tạo nhân lực CNTT trình độ cao</h5>
+                                </div>
+                                <div class="service-row desc">
+                                    <p class="lang" key="SERVICE-ITEM-DESC04">Chương trình tập trung ươm mầm các nhà lãnh đạo tương lai trong ngành công nghệ. 
+                                        Giúp nhân sự phát triển toàn diện về kiến thức, kỹ năng sáng tạo và xây dựng sản xuất, phát triển và đánh giá</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="process">
+            <div class="process">
+                <div class="container">
+                    <div class="row" >
+                        <div class="col-12 col-md-4 col-lg-4" data-animate-in="left" data-animate-in-delay="50">
+                            <div class="process_title">
+                                <h3 class="lang" key="PROCESS-TITLE">Quy trình</h3>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-8" data-animate-in="right" data-animate-in-delay="50">
+                            <div class="section_desc">
+                                <p class="desc lang" key="PROCESS-DESC">
+                                    Toàn bộ quy trình đều có sự tham dự của
+                                    hai bên khách hàng và công ty ApecTech
+                                    nhằm đảm bảo sự thành công của dự án.
+                                </p>
+                            </div>
+                            <div class="process-line line"></div>
+                        </div>
+                        <div class="process-content col-12 col-md-12 col-lg-12">
+                            <div class="container">
+                                <div class="row" data-animate-in="up" data-animate-in-delay="50">
+                                    <div class="col-12 col-md-4 col-lg-4" data-animate-in="left" data-animate-in-delay="50">
+                                        <div class="border-custom border-custom-up">
+                                            <div class="card-wrapper">
+                                                <div class="process-row process-icon">
+                                                    <img src="./assets/images/process-1.png" alt="">
+                                                </div>
+                                                <div class="process-row process-title">
+                                                    <h5 class="lang" key ="PROCESS-ITEM-01">
+                                                        1. Plan
+                                                    </h5>
+                                                </div>
+                                                <div class="desc process-row" key="PROCESS-ITEM-DESC01">
+                                                    <p class="lang" key="PROCESS-ITEM-DESC01">Discover and Define</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-4" data-animate-in="fadeIn" data-animate-in-delay="50">
+                                        <div class="border-custom border-custom-down">
+                                            <div class="card-wrapper">
+                                                <div class="process-row process-icon">
+                                                    <img src="./assets/images/process-2.png" alt="">
+                                                </div>
+                                                <div class="process-row process-title">
+                                                    <h5 class="lang" key="PROCESS-ITEM-02">
+                                                        2. Design
+                                                    </h5>
+                                                </div>
+                                                <div class="desc process-row">
+                                                    <p class="lang"key="PROCESS-ITEM-DESC02">Create Visuals</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-4" data-animate-in="right" data-animate-in-delay="50">
+                                        <div class="border-custom border-custom-up">
+                                            <div class="card-wrapper">
+                                                <div class="process-row process-icon">
+                                                    <img src="./assets/images/process-3.png" alt="">
+                                                </div>
+                                                <div class="process-row process-title">
+                                                    <h5 class="lang" key="PROCESS-ITEM-03">
+                                                        3. Build
+                                                    </h5>
+                                                </div>
+                                                <div class="desc process-row">
+                                                    <p class="lang" key="PROCESS-ITEM-DESC03">Develop & Construct</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" data-animate-in="up" data-animate-in-delay="50">
+                                    <div class="col-12 col-md-4 col-lg-4" data-animate-in="left" data-animate-in-delay="50">
+                                        <div class="border-custom border-custom-down">
+                                            <div class="card-wrapper">
+                                                <div class="process-row process-icon">
+                                                    <img src="./assets/images/process-4.png" alt="">
+                                                </div>
+                                                <div class="process-row process-title">
+                                                    <h5 class="lang" key="PROCESS-ITEM-04" >
+                                                        4. Beta
+                                                    </h5>
+                                                </div>
+                                                <div class="desc process-row">
+                                                    <p class="lang" key="PROCESS-ITEM-DESC04">Monitor, Evaluale & Refine</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-4" data-animate-in="fadeIn" data-animate-in-delay="50">
+                                        <div class="border-custom border-custom-up">                                            
+                                            <div class="card-wrapper">
+                                                <div class="process-row process-icon">
+                                                    <img src="./assets/images/process-5.png" alt="">
+                                                </div>
+                                                <div class="process-row process-title">
+                                                    <h5 class="lang" key="PROCESS-ITEM-05">
+                                                        5. Launch
+                                                    </h5>
+                                                </div>
+                                                <div class="desc process-row">
+                                                    <p class="lang" key="PROCESS-ITEM-DESC05">Optimize & Go Live </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-4" data-animate-in="right" data-animate-in-delay="50">
+                                        <div class="border-custom border-custom-down">
+                                            <div class="card-wrapper">
+                                                <div class="process-row process-icon">
+                                                    <img src="./assets/images/process-6.png" alt="">
+                                                </div>
+                                                <div class="process-row process-title">
+                                                    <h5 class="lang" key="PROCESS-ITEM-06">
+                                                        6. Support
+                                                    </h5>
+                                                </div>
+                                                <div class="desc process-row">
+                                                    <p class="lang" key="PROCESS-ITEM-DESC06">Test & Train</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="teams">
+            <div class="section_title" data-animate-in="up" data-animate-in-delay="50">
+                <h3 class="lang" key="TEAMS-TITLE">Đội ngũ</h3>
+                <p class="desc lang" key="TEAMS-DESC">Chúng tôi đam mê cùng định hướng, đang và sẽ luôn rèn luyện.</p>
+                <div class="line"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-4 team-col" data-animate-in="right" data-animate-in-delay="50">
+                            <div class="card-wrapper">
+                                <div class="service-row service-icon">
+                                    <img src="./assets/images/team-img-01-03.png" alt="">
+                                </div>
+                                <div class="service-row service-title">
+                                    <h5>Olivia Rhye</h5>
+                                </div>
+                                <div class="desc service-row">
+                                    <p class="position">Founder & CEO</p>
+                                    <p>Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 team-col" data-animate-in="fadeIn" data-animate-in-delay="50">
+                            <div class="card-wrapper">
+                                <div class="service-row service-icon">
+                                    <img src="./assets/images/team-img-01-03.png" alt="">
+                                </div>
+                                <div class="service-row service-title">
+                                    <h5>
+                                        Olivia Rhye
+                                    </h5>
+                                </div>
+                                <div class="desc service-row ">
+                                    <p class="position">Founder & CEO</p>
+                                    <p>Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 team-col" data-animate-in="left" data-animate-in-delay="50">
+                            <div class="card-wrapper">
+                                <div class="service-row service-icon">
+                                    <img src="./assets/images/team-img-01-03.png" alt="">
+                                </div>
+                                <div class="service-row service-title">
+                                    <h5>
+                                        Olivia Rhye
+                                    </h5>
+                                </div>
+                                <div class="desc service-row">
+                                    <p class="position">Founder & CEO</p>
+                                    <p>Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="footer" class="fw">
+        <div class="container">
+            <div class="row footer-wrapper">
+                <div class="col-12 col-md-7 col-lg-7" style="padding: 0;" data-animate-in="up" data-animate-in-delay="50">
+                    <div class="logo-img">
+                        <img src="./assets/images/logo-pc.png" alt="">
+                    </div>
+                    <div class="desc lang" key="FOOTER-DESC">
+                        ApecTech _ Sứ mệnh mang dịch vụ IT Việt Nam ra Thế giới
+                    </div>
+                    <div class="footer-link-mb">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 col-md-6 col-lg-6" style="padding: 0;">
+                                    <a href="#home">
+                                        <p class="lang" key="FOOTER-LINK01">Trang chủ</p>
+                                    </a>
+                                    <a href="#about">
+                                        <p class="lang" key="FOOTER-LINK02">Giới thiệu</p>
+                                    </a>
+                                    <a href="#product">
+                                        <p class="lang" key="FOOTER-LINK02">Sản phẩm</p>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-6" style="padding: 0;">
+                                    <a href="#service">
+                                        <p class="lang" key="FOOTER-LINK03">Dịch vụ</p>
+                                    </a>
+                                    <a href="#process">
+                                        <p class="lang" key="FOOTER-LINK05">Quy trình</p>
+                                    </a>
+                                    <a href="#teams">
+                                        <p class="lang" key="FOOTER-LINK06">Đội ngũ lãnh đạo</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                                             
+                    </div>
+                    <div class="footer-link">
+                        <a href="#home">
+                            <p class="lang" key="FOOTER-LINK01">Trang chủ</p>
+                        </a>
+                        <a href="#about">
+                            <p class="lang" key="FOOTER-LINK02">Giới thiệu</p>
+                        </a>
+                        <a href="#product">
+                            <p class="lang" key="FOOTER-LINK03">Sản phẩm</p>
+                        </a>
+                        <a href="#service">
+                            <p class="lang" key="FOOTER-LINK04">Dịch vụ</p>
+                        </a>
+                        <a href="#process">
+                            <p class="lang" key="FOOTER-LINK05">Quy trình</p>
+                        </a>
+                        <a href="#teams">
+                            <p class="lang" key="FOOTER-LINK06">Đội ngũ lãnh đạo</p>
+                        </a>                                             
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-5" style="padding: 0;" data-animate-in="up" data-animate-in-delay="50">
+                    <h5 class="lang" key="FOOTER-TITLE">Đăng ký nhận tư vấn</h5>
+                    <form class="form-inline">
+                        <div class="form-group mx-sm-3 mb-2">
+                          <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2 lang" key="FOOTER-CONSULTANT">Tư vấn</button>
+                    </form>
+                    <div class="item address">
+                        <img src="./assets/images/footer-location.svg" alt="#">
+                        <p>Tầng 3 Grand Plaza, 117 Trần Duy Hưng, Cầu Giấy, Hà Nội</p>
+                    </div>
+                    <div class="item phone">
+                        <img src="./assets/images/footer-calling.svg" alt="#">
+                        <p>0915 251 505</p>
+                    </div>
+                    <div class="item mail">
+                        <img src="./assets/images/footer-mail.svg" alt="#">
+                        <p>infotech@apecgroup.net</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mar0 copyright">
+            <div class="container" >
+                <p>@Apec Technology</p>
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="top-btn" title="Go to top"><img src="./assets/images/topbtn.png"
+            alt="btn"></button>
+
+    <!-- Optional JavaScript -->
+    <script src="assets/library/jquery-3.3.1.min.js"></script>
+    <script src="assets/library/slick.min.js"></script>
+    <!-- <script src="assets/library/all.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js file link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/multi-lan.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

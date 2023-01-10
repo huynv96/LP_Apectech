@@ -1,0 +1,62 @@
+#service{
+    .service{
+        position: relative;
+        .card-wrapper:hover {
+            border: 1px solid #F79009!important;
+            box-shadow: 0px 12px 12px -4px #F7900914;
+        }
+        .card-wrapper{
+            background: #FDFDFD;    
+            box-shadow: 0px 0px 16px -2px rgba(32, 34, 35, 0.04), 0px 2px 4px -2px rgba(32, 34, 35, 0.06);
+            border-radius: 16px;
+            padding: 60px 26px; 
+            height: 400px;     
+            .service-icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .service-title{
+                h5{
+                    margin: auto;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    line-height: 3.6rem;
+                }
+            }
+            .service-row{
+                margin: 2rem 0;
+            }
+            .desc{
+                text-align: center;
+            }
+        }
+        .number{
+            position: absolute;
+            top: 0;
+            left: 15px;
+            padding:1.2rem 1.6rem;
+            border-top-left-radius: 1.6rem;
+            border-bottom-right-radius: 1.6rem;
+            background: #7F0E0C;
+            span{
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 150%;
+                color: #FDFDFD;
+            }
+        }
+        // Make columns same height
+        .row-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* vertical spacing between columns */
+
+        [class*="col-"] {
+            margin-bottom: 30px;
+        }
+            }
+}

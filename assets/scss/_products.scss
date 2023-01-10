@@ -1,0 +1,122 @@
+#product{
+    position: relative;
+    background: rgba(254, 243, 242, 0.5);
+    // .product{
+    //     width: 100%;
+    //     position: absolute;
+    //     top:50%;
+    //     left:50%;
+    //     transform: translate(-50%, -50%);
+    // }
+    background: rgba(254, 243, 242, 0.5);
+    .product_title{
+        border-left: 5px solid var(--main-color);
+        padding: 2.1rem 2.4rem;
+        h3{
+           font-size: 4.8rem;
+           font-weight: 700;
+           line-height: 120%;
+           font-style: normal;
+           color: var(--text-color); 
+        }       
+    }
+    .product-line{
+        display: none;
+     }
+    .section_desc{
+         padding: 2.1rem 0;   
+         .desc{
+            font-size: 2rem;
+            line-height: 3rem;
+            font-weight: 400;
+         }
+    }
+    .product-content{
+        margin: 6rem 0;
+        .nav-link.active{
+            color:#7F0E0C;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 3rem;
+            border-bottom: 2px solid #7F0E0C !important;
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+            background: transparent;
+            border: transparent;
+            padding: 8px 16px;
+        }
+        .nav-link{
+            color: #807777;
+        } 
+        .slider {
+        max-width: 1200px;
+        margin: 0 auto;
+        // background: red;
+        }
+        
+        .slick-list {
+            padding-left: 0px!important; // half partial
+        }
+        .slick-slideshow__slide {
+            align-items: center;
+            border-radius: 20px;
+            padding: 1rem 1rem;          
+            .card-img-top{
+                padding: 10px 40px;
+                background: #7F0E0C;
+                border-radius: 8px;
+            }
+            .card-img,.card-body{
+                padding: 1.6rem;
+                position: relative;
+                overflow: hidden;
+            }
+            .card-img:hover img{
+                transform: scale(1.01);
+            }
+        }
+        .card{
+            border-radius: 20px;
+            background: #fdfdfd;
+        }
+        .card-body{
+            a{
+                display: flex;
+                p,svg{
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    font-weight: 500;
+                    color: #FDB022;
+                    margin: auto 2px;
+                }
+            }
+        }
+        .grid{
+            position: absolute;
+        }
+        .grid-left{
+            bottom: 1.6rem;
+            left: 1.6rem;
+            border-bottom-left-radius:8px;
+            
+        }
+        .grid-right{
+            top: 1.6rem;
+            right: 1.6rem;
+            border-top-right-radius:8px;
+        }
+          
+    }
+    .tab-content{
+        margin-top: 6rem!important;
+    }
+    .tab-content>.tab-pane{ 
+        display: block; 
+        height: 0px; 
+        overflow: hidden; 
+    }
+    .tab-content>.active{ 
+        height: auto;
+    }
+
+}
