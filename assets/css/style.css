@@ -328,7 +328,7 @@ template {
   --dark-bg:rgba(0,0,0,.7);
   --border:.1rem solid #aaa;
   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-  --main-color: #FDB022;
+  --main-color: #DF3638;
   --second-color: #fff;
   --text-color:#262424;
   --second-text-color: #807777;
@@ -348,7 +348,6 @@ template {
 * > img {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
 }
@@ -474,7 +473,7 @@ button:focus {
 
 .main-button {
   background: var(--main-color);
-  color: #262424;
+  color: #fff;
   padding: 1rem 3.2rem;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -509,19 +508,11 @@ input::-moz-placeholder {
   font-size: 1.6rem;
 }
 
-input:-ms-input-placeholder {
-  font-size: 1.6rem;
-}
-
 input::placeholder {
   font-size: 1.6rem;
 }
 
 textarea::-moz-placeholder {
-  font-size: 1.6rem;
-}
-
-textarea:-ms-input-placeholder {
   font-size: 1.6rem;
 }
 
@@ -683,6 +674,7 @@ textarea::placeholder {
 }
 
 .switch-language {
+  display: none;
   padding: 4px;
   background: #FFFFFF;
   box-shadow: 0px 1px 2px rgba(32, 34, 35, 0.05);
@@ -811,27 +803,22 @@ textarea::placeholder {
   max-width: 450px;
 }
 #home .owl-item.active span {
-  -webkit-animation: fadeInRight ease 1s;
-          animation: fadeInRight ease 1s;
+  animation: fadeInRight ease 1s;
 }
 #home .owl-item.active .desc {
-  -webkit-animation: fadeInRight ease 1.6s;
-          animation: fadeInRight ease 1.6s;
+  animation: fadeInRight ease 1.6s;
 }
 #home .owl-item.active .more {
-  -webkit-animation: fadeInRight ease 2s;
-          animation: fadeInRight ease 2s;
+  animation: fadeInRight ease 2s;
 }
 #home .owl-item.active .col-right img {
-  -webkit-animation: fadeInRight ease 2.3s;
-          animation: fadeInRight ease 2.3s;
+  animation: fadeInRight ease 2.3s;
 }
 #home .more {
   max-width: 260px;
   margin-top: 20px;
   cursor: pointer;
-  -webkit-animation: slideInLeft ease 1s;
-          animation: slideInLeft ease 1s;
+  animation: slideInLeft ease 1s;
 }
 #home .more a {
   color: var(--text-color);
@@ -884,16 +871,6 @@ textarea::placeholder {
   animation-name: animatetop;
   animation-duration: 0.4s;
   border: none;
-}
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 50%;
-    opacity: 1;
-  }
 }
 @keyframes animatetop {
   from {
@@ -1447,17 +1424,7 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(8, 20, 43, 0), #2662d9);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
-}
-
-@-webkit-keyframes animateTop {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }
 @keyframes animateTop {
   0% {
@@ -1473,17 +1440,7 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(8, 20, 43, 0), #2662d9);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
-}
-
-@-webkit-keyframes animateRight {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
 }
 @keyframes animateRight {
   0% {
@@ -1499,17 +1456,7 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(8, 20, 43, 0), #2662d9);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
-}
-
-@-webkit-keyframes animateBottom {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
 }
 @keyframes animateBottom {
   0% {
@@ -1525,17 +1472,7 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #2662d9);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
-}
-
-@-webkit-keyframes animateLeft {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(100%);
-  }
 }
 @keyframes animateLeft {
   0% {
@@ -1586,7 +1523,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(43, 8, 8, 0), #d92626);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
 
@@ -1604,7 +1540,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(43, 8, 8, 0), #d92626);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
 
@@ -1622,7 +1557,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(43, 8, 8, 0), #d92626);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
 
@@ -1640,7 +1574,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #d92626);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
 }
 
@@ -1694,7 +1627,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(43, 26, 8, 0), #d98026);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
 
@@ -1712,7 +1644,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(43, 26, 8, 0), #d98026);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
 
@@ -1730,7 +1661,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(43, 26, 8, 0), #d98026);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
 
@@ -1748,7 +1678,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(43, 26, 8, 0), #d98026);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
 }
 
@@ -1802,7 +1731,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(43, 43, 8, 0), #d9d926);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
 
@@ -1820,7 +1748,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(43, 43, 8, 0), #d9d926);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
 
@@ -1838,7 +1765,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(43, 43, 8, 0), #d9d926);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
 
@@ -1856,7 +1782,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(43, 43, 8, 0), #d9d926);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
 }
 
@@ -1910,7 +1835,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(26, 43, 8, 0), #80d926);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
 
@@ -1928,7 +1852,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(26, 43, 8, 0), #80d926);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
 
@@ -1946,7 +1869,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(26, 43, 8, 0), #80d926);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
 
@@ -1964,7 +1886,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(26, 43, 8, 0), #80d926);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
 }
 
@@ -2018,7 +1939,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(8, 43, 8, 0), #26d926);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
 
@@ -2036,7 +1956,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(8, 43, 8, 0), #26d926);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
 
@@ -2054,7 +1973,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(8, 43, 8, 0), #26d926);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
 
@@ -2072,7 +1990,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(8, 43, 8, 0), #26d926);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
 }
 
@@ -2126,7 +2043,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(8, 43, 26, 0), #26d980);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
 
@@ -2144,7 +2060,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(8, 43, 26, 0), #26d980);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
 
@@ -2162,7 +2077,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(8, 43, 26, 0), #26d980);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
 
@@ -2180,7 +2094,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(8, 43, 26, 0), #26d980);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
 }
 
@@ -2234,7 +2147,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(8, 43, 43, 0), #26d9d9);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
 
@@ -2252,7 +2164,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(8, 43, 43, 0), #26d9d9);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
 
@@ -2270,7 +2181,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(8, 43, 43, 0), #26d9d9);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
 
@@ -2288,7 +2198,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(8, 43, 43, 0), #26d9d9);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
 }
 
@@ -2342,7 +2251,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(8, 26, 43, 0), #2680d9);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
 
@@ -2360,7 +2268,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(8, 26, 43, 0), #2680d9);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
 
@@ -2378,7 +2285,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(8, 26, 43, 0), #2680d9);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
 
@@ -2396,7 +2302,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(8, 26, 43, 0), #2680d9);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
 }
 
@@ -2450,7 +2355,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(8, 8, 43, 0), #2626d9);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
 
@@ -2468,7 +2372,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(8, 8, 43, 0), #2626d9);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
 
@@ -2486,7 +2389,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(8, 8, 43, 0), #2626d9);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
 
@@ -2504,7 +2406,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(8, 8, 43, 0), #2626d9);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
 }
 
@@ -2558,7 +2459,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(26, 8, 43, 0), #8026d9);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
 
@@ -2576,7 +2476,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(26, 8, 43, 0), #8026d9);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
 
@@ -2594,7 +2493,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(26, 8, 43, 0), #8026d9);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
 
@@ -2612,7 +2510,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(26, 8, 43, 0), #8026d9);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
 }
 
@@ -2666,7 +2563,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(43, 8, 43, 0), #d926d9);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
 
@@ -2684,7 +2580,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(43, 8, 43, 0), #d926d9);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
 
@@ -2702,7 +2597,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(43, 8, 43, 0), #d926d9);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
 
@@ -2720,7 +2614,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(43, 8, 43, 0), #d926d9);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
 }
 
@@ -2774,7 +2667,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to left, rgba(43, 8, 26, 0), #d92680);
-  -webkit-animation: 2s animateTop linear infinite;
   animation: 2s animateTop linear infinite;
 }
 
@@ -2792,7 +2684,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to top, rgba(43, 8, 26, 0), #d92680);
-  -webkit-animation: 2s animateRight linear -1s infinite;
   animation: 2s animateRight linear -1s infinite;
 }
 
@@ -2810,7 +2701,6 @@ textarea::placeholder {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, rgba(43, 8, 26, 0), #d92680);
-  -webkit-animation: 2s animateBottom linear infinite;
   animation: 2s animateBottom linear infinite;
 }
 
@@ -2828,7 +2718,6 @@ textarea::placeholder {
   height: 100%;
   width: 2px;
   background: linear-gradient(to bottom, rgba(43, 8, 26, 0), #d92680);
-  -webkit-animation: 2s animateLeft linear -1s infinite;
   animation: 2s animateLeft linear -1s infinite;
 }
 
